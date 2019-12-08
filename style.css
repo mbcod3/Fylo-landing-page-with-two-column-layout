@@ -97,12 +97,6 @@ h4 {
   }
 }
 
-.hide {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
 /* -------- */
 
 .welcome {
@@ -327,6 +321,12 @@ h4 {
 @media only screen and (max-width: 860px) {
   .cta__form input:nth-child(3) {
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cta__form input:nth-child(3) {
+    width: 100%;
   }
 }
 
