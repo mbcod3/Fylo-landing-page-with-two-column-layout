@@ -10,8 +10,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; background-color:hsl(243, 87%, 12%); margin: 0 auto;color: hsl(228, 37%, 89%);}
+    .attribution a { color: hsl(228, 37%, 89%); }
   </style>
   <script src="https://kit.fontawesome.com/37cff6aa80.js" crossorigin="anonymous"></script>
 
@@ -33,11 +33,11 @@
       <h3>Fylo stores your most important files in one secure location. 
         Access them wherever you need, share and collaborate with friends, 
         family, and co-workers.</h3>
-      <!-- <label for="welcome__email" class="">Email Address</label> -->
+      <label for="welcome__email" class="hide">Enter Email Address</label>
       <input type="text" class="welcome__email" name="welcome__email" placeholder="Enter your email...">
       <input type="button" value="Get Started" class="start-button">
     </div>
-    <img src="images/illustration-1.svg" alt="files" class="illustration1">
+    <img src="images/illustration-1.svg" alt="files" class="illustration">
   </section>
   
   <section class="pitch">
@@ -48,7 +48,7 @@
         covered for all of your file storage needs.</h4>
         <h4>Securely share files and folders with friends, family and colleagues for 
           live collaboration. No email attachments required!</h4>
-        <h4 class="pitch__test">See how Fylo works</h4>
+        <a href="#" class="pitch__demo">See how Fylo works <span alt="arrow" class="arrow-img" /></a>
         <div class="testimonial">
           <img src="images/icon-quotes.svg" alt="quote icon">
           <p class="testimonial__quote">Fylo has improved our team productivity by an order of magnitude. Since 
@@ -62,45 +62,50 @@
             </div>
         </div>
       </div>
-      <img src="images/illustration-2.svg" alt="productivity" class="illustration2">
+      <img src="images/illustration-2.svg" alt="productivity" class="illustration">
     </div>
   </section>
   
   
   <section class="cta">
-    <div class="cta__headings">
-      <h1>Get early access today</h1>
-      <h3>It only takes a minute to sign up and our free starter tier is extremely generous. 
-      If you have any questions, our support team would be happy to help you.</h3>
+    <div class="container flex">
+      <div class="cta__headings">
+        <h2>Get early access today</h2>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.</p>
+      </div>
       <div class="cta__form">
-        <input type="text">
+        <label for="cta__email" class="hide">Enter Email Address Here</label>
+        <input type="text" class="welcome__email" placeholder="email@example.com" name="cta__email">
         <input type="button" value="Get Started For Free" class="start-button">
       </div>
     </div>
   </section>
   
   <footer>
-    <img src="images/logo.svg" alt="logo">
-    <div class="footer__nav">
-      <div class="footer__contact">
-        <span class="icon">+1-543-123-4567</span>
-        <span class="icon">email@fylo.com</span>
-      </div>
-      <div class="footer__links">
-        <a href="#">About Us</a>
-        <a href="#">Jobs</a>
-        <a href="#">Press</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="footer__links">
-          <a href="#">Contact Us</a>
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
-      </div>
-      <div class="social">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
+    <div class="container">
+      <img src="images/logo-footer.svg" alt="logo">
+      <div class="footer__nav flex">
+        <div class="footer__contact">
+          <span class="icon-phone">Phone: +1-543-123-4567</span>
+          <span class="icon-email">email@fylo.com</span>
+        </div>
+        <div class="footer__links flex">
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer__links flex">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="footer__social">
+          <i class="fab fa-facebook-f icon-border"></i>
+          <i class="fab fa-twitter icon-border"></i>
+          <i class="fab fa-instagram icon-border"></i>
+        </div>
       </div>
     </div>
   </footer>
